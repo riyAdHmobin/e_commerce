@@ -35,6 +35,7 @@
 						    				<div class="mb-3">
 						    					<label for="slug">Slug</label>
 						    					<input type="text" name="slug" id="slug" class="form-control" placeholder="Slug">
+												<!-- <input type="text" readonly name="slug" id="slug" class="form-control" placeholder="Slug"> -->
 												<p></p>
 						    				</div>
 						    			</div>
