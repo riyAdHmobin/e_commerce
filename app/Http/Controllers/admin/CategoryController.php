@@ -30,7 +30,7 @@ class CategoryController extends Controller
         } else{
             return response()->json([
                 'status' => false,
-                'errors' => $validator->error()
+                'errors' => $validator->errors()
             ]);
         }
 
