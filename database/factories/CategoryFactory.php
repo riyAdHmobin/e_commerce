@@ -19,7 +19,7 @@ class CategoryFactory extends Factory
         return [
             'name' => fake()->name(),
             'status' => rand(0,1),
-            'slug' => fake()->name()->unique()
+            'slug' => fake()->name()
             
         ];
     }
