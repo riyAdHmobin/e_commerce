@@ -77,28 +77,41 @@
             dataType: 'json',
             success: function(response){
 
-				var errors = response['errors'];
+				if(response["status"] == true){
 
-                if(errors['name']){
-					$("#name").addClass('is-invalid')
-					.siblings('p')
-					.addClass('invalid-feedback').html(errors['name']);
-				} else{
 					$("#name").removeClass('is-invalid')
-					.siblings('p')
-					.removeClass('invalid-feedback').html("");
-				}
+						.siblings('p')
+						.removeClass('invalid-feedback').html("");
 
-
-				if(errors['slug']){
-					$("#slug").addClass('is-invalid')
-					.siblings('p')
-					.addClass('invalid-feedback').html(errors['slug']);
-				} else{
 					$("#slug").removeClass('is-invalid')
-					.siblings('p')
-					.removeClass('invalid-feedback').html("");
+						.siblings('p')
+						.removeClass('invalid-feedback').html("");
+
+				} else{
+					var errors = response['errors'];
+
+                	if(errors['name']){
+						$("#name").addClass('is-invalid')
+						.siblings('p')
+						.addClass('invalid-feedback').html(errors['name']);
+					} else{
+						$("#name").removeClass('is-invalid')
+						.siblings('p')
+						.removeClass('invalid-feedback').html("");
+					}
+
+					if(errors['slug']){
+						$("#slug").addClass('is-invalid')
+						.siblings('p')
+						.addClass('invalid-feedback').html(errors['slug']);
+					} else{
+						$("#slug").removeClass('is-invalid')
+						.siblings('p')
+						.removeClass('invalid-feedback').html("");
+					}
 				}
+
+				
 
             }, error: function(jqXHR, exception){
                 console.log("Something Went Wrong!");
