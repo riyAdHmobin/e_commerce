@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 26, 2024 at 04:48 PM
+-- Generation Time: Feb 26, 2024 at 05:48 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -44,7 +44,37 @@ CREATE TABLE `categories` (
 INSERT INTO `categories` (`id`, `name`, `slug`, `image`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'Cloths', 'cloths', NULL, 1, '2024-02-26 06:38:25', '2024-02-26 06:38:25'),
 (2, 'Women\'s Cloths', 'womens-cloths', NULL, 0, '2024-02-26 07:17:21', '2024-02-26 07:17:21'),
-(3, 'Men\'s Cloths', 'mens-cloth', NULL, 1, '2024-02-26 07:19:08', '2024-02-26 07:19:08');
+(3, 'Men\'s Cloths', 'mens-cloth', NULL, 1, '2024-02-26 07:19:08', '2024-02-26 07:19:08'),
+(4, 'Sadie O\'Connell', 'Dr. Nathanial McGlynn Sr.', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(5, 'Dr. Rex Cronin', 'Ms. Kaitlin Price V', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(6, 'Kraig Johns', 'Lawrence Price', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(7, 'Mr. Nicklaus Kovacek V', 'Frederik Jones', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(8, 'Efrain Nolan I', 'Ambrose Hermann', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(9, 'Tristin Fritsch MD', 'Mr. Jarrell Streich IV', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(10, 'Bailey Marquardt', 'Tressie Bernhard', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(11, 'Wilfred Gerhold', 'Prof. Sage Halvorson', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(12, 'Prof. Sierra Jones I', 'Marc Schinner', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(13, 'Casandra Hamill Jr.', 'Prof. Braxton Wintheiser', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(14, 'Dr. Orin Senger', 'Natalia Macejkovic', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(15, 'Misael Schaden II', 'Kaitlin Wyman', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(16, 'Kaci Stracke PhD', 'Jennings Rowe', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(17, 'Myra Leuschke PhD', 'Randy Parisian', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(18, 'Jace Harber', 'Dr. Arely Bruen DVM', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(19, 'Ms. Sally Weber IV', 'Mrs. Luella Grant V', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(20, 'Cyril Bradtke', 'Mrs. Cydney Johns', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(21, 'Patricia Reynolds', 'Janae Hagenes', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(22, 'Tessie Balistreri', 'Louie Deckow', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(23, 'Penelope Spinka', 'Demarco Pollich', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(24, 'Stone Sawayn', 'Bobby Russel Sr.', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(25, 'Baron Monahan', 'Miss Arianna Boyer PhD', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(26, 'Lucious Eichmann', 'Lucie Kertzmann', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(27, 'Clay Ortiz I', 'Kaela Wilderman V', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(28, 'Alfreda Treutel Jr.', 'Maryam Towne', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(29, 'Tyrell Wehner', 'Mr. Lucio Crona', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(30, 'Alexandra Cremin', 'Scot West', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(31, 'Rita Erdman', 'Isom Gaylord Sr.', NULL, 0, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(32, 'Wilber Kohler', 'Lorine Kessler PhD', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00'),
+(33, 'Shayna Crooks', 'Mrs. Matilda Kassulke PhD', NULL, 1, '2024-02-26 09:52:00', '2024-02-26 09:52:00');
 
 -- --------------------------------------------------------
 
@@ -195,7 +225,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
