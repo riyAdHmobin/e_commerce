@@ -23,7 +23,7 @@
 					<a href="#" class="h3">Admin Login</a>
 			  	</div>
 			  	<div class="card-body">
-					<p class="login-box-msg">Sign in to start your session</p>
+					<p class="login-box-msg">LOGIN</p>
 					<form action="{{ route('admin.authenticate') }}" method="post">
 						@csrf
 				  		<div class="input-group mb-3">
