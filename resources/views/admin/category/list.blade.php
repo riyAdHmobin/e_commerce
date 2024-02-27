@@ -21,10 +21,21 @@
 <section class="content">
 	<!-- Default box -->
 	<div class="container-fluid">
+
+		@include('admin.message')
+
 		<div class="card">
         <form action="" method="get">
 			<div class="card-header">
-				
+
+			<button id="resetButton" type="button" class="btn btn-default btn-sm">Reset</button>
+
+			<script>
+			    document.getElementById("resetButton").onclick = function() {
+			        window.location.href = "{{ route('categories.index') }}";
+			    };
+			</script>
+
                 
                     <div class="card-tools">
 				    	<div class="input-group input-group" style="width: 250px;">
@@ -111,6 +122,10 @@
 
 @section('customJs')
 
-
+<script>
+	document.getElementById("resetButton").onclick = function() {
+	    window.location.href = "{{ route('categories.index') }}";
+	};
+</script>
 
 @endsection
