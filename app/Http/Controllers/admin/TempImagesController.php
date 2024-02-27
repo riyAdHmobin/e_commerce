@@ -20,9 +20,11 @@ class TempImagesController extends Controller
 
             $image->move(public_path().'/temp', $newName);
 
-            // return response()->json([
-            //     'status' =
-            // ])
+            return response()->json([
+                'status' => true,
+                'image_id' => $tempImage->id,
+                'message' => 'Image Uploaded Successfully'
+            ]);
         }
     }
 }
