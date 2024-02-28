@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\TempImage;
 use Illuminate\Http\Request;
 
 class TempImagesController extends Controller
@@ -14,7 +15,7 @@ class TempImagesController extends Controller
             $ext = $image->getClientOriginalExtension();
             $newName = time().'.'.$ext;
 
-            $tempImage = new TemImage();
+            $tempImage = new TempImage();
             $tempImage->name = $newName;
             $tempImage->save();
 
